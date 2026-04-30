@@ -1,0 +1,565 @@
+ 
+
+<!doctype html>
+<html lang="en" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhea Cay Aesthetic Clinic</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+  <style>
+   
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    .gradient-hero { background: linear-gradient(135deg, #B48C64 0%, #8B6F47 100%); }
+    .card-hover { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card-hover:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(0,0,0,0.1); }
+    .btn-primary { background: #B48C64; color: #FAF7F4; transition: all 0.3s ease; }
+    .btn-primary:hover { background: #8B6F47; }
+    .nav-active { border-bottom: 2px solid #B48C64; }
+  </style>
+  <script src="/_sdk/data_sdk.js"></script>
+  <style>body { box-sizing: border-box; }</style>
+  
+ </head>
+ <body class="h-full overflow-auto" style="font-family: 'Poppins', sans-serif; background: #FAF7F4; color: #3D3228;"><!-- Navigation -->
+  <nav class="fixed top-0 left-0 w-full z-50 shadow-sm" style="background: #FAF7F4;">
+   <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+     <div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background: #B48C64;">
+      <i data-lucide="sparkles" style="width:20px; height:20px; color: #FAF7F4;"></i>
+     </div>
+     <h1 class="text-lg font-bold" style="color: #3D3228;">Bhea Cay</h1>
+    </div>
+    <div class="flex items-center gap-6"><button id="nav-home" class="text-sm font-medium pb-2 nav-active" style="color: #B48C64;">Home</button> <button id="nav-services" class="text-sm font-medium pb-2" style="color: #7A6B5D;">Services</button> <button id="nav-inventory" class="text-sm font-medium pb-2" style="color: #7A6B5D;">Inventory</button> <button id="nav-contact" class="text-sm font-medium pb-2" style="color: #7A6B5D;">Contact</button>
+    </div>
+   </div>
+  </nav><!-- Home Section -->
+  
+  <section id="home-section" class="pt-24"><!-- Hero -->
+   <div class="gradient-hero text-white px-6 py-20">
+    <div class="max-w-5xl mx-auto text-center">
+     <h2 class="text-5xl font-bold mb-6">Elevate Your Beauty</h2>
+     <p class="text-lg mb-8 opacity-90">Professional aesthetic treatments for radiant, youthful skin</p>
+    </div>
+   </div><!-- Stats -->
+   <div class="max-w-6xl mx-auto px-6 -mt-12 relative z-10 mb-16">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+     <div class="bg-white p-8 rounded-xl shadow-md">
+      <div class="text-3xl font-bold mb-2" style="color: #B48C64;">
+       500+
+      </div>
+      <p style="color: #7A6B5D;">Happy Clients</p>
+     </div>
+     <div class="bg-white p-8 rounded-xl shadow-md">
+      <div class="text-3xl font-bold mb-2" style="color: #B48C64;">
+       12
+      </div>
+      <p style="color: #7A6B5D;">Expert Treatments</p>
+     </div>
+     <div class="bg-white p-8 rounded-xl shadow-md">
+      <div class="text-3xl font-bold mb-2" style="color: #B48C64;">
+       8+
+      </div>
+      <p style="color: #7A6B5D;">Years Experience</p>
+     </div>
+    </div>
+   </div><!-- Featured Services -->
+   <div class="max-w-6xl mx-auto px-6 mb-20">
+    <h3 class="text-3xl font-bold mb-12 text-center" style="color: #3D3228;">Our Services</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+     <div class="bg-white p-8 rounded-xl card-hover shadow-sm">
+      <div class="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style="background: rgba(180, 140, 100, 0.1);">
+       <i data-lucide="droplets" style="width:24px; height:24px; color: #B48C64;"></i>
+      </div>
+      <h4 class="text-lg font-semibold mb-3" style="color: #3D3228;">Hydration Therapy</h4>
+      <p style="color: #7A6B5D;" class="text-sm">Deep moisture infusion treatments for glowing, supple skin</p>
+     </div>
+     <div class="bg-white p-8 rounded-xl card-hover shadow-sm">
+      <div class="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style="background: rgba(180, 140, 100, 0.1);">
+       <i data-lucide="zap" style="width:24px; height:24px; color: #B48C64;"></i>
+      </div>
+      <h4 class="text-lg font-semibold mb-3" style="color: #3D3228;">Skin Rejuvenation</h4>
+      <p style="color: #7A6B5D;" class="text-sm">Advanced treatments to restore youthful glow and elasticity</p>
+     </div>
+     <div class="bg-white p-8 rounded-xl card-hover shadow-sm">
+      <div class="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style="background: rgba(180, 140, 100, 0.1);">
+       <i data-lucide="smile" style="width:24px; height:24px; color: #B48C64;"></i>
+      </div>
+      <h4 class="text-lg font-semibold mb-3" style="color: #3D3228;">Anti-Aging</h4>
+      <p style="color: #7A6B5D;" class="text-sm">Cutting-edge solutions to minimize fine lines and wrinkles</p>
+     </div>
+    </div>
+   </div><!-- Why Choose Us -->
+   <div style="background: #F0E8DF;" class="py-16 mb-20">
+    <div class="max-w-6xl mx-auto px-6">
+     <h3 class="text-3xl font-bold mb-12 text-center" style="color: #3D3228;">Why Clients Love Us</h3>
+     <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div class="flex gap-4"><i data-lucide="check-circle" style="width:24px; height:24px; color: #B48C64; flex-shrink: 0; margin-top: 2px;"></i>
+       <div>
+        <h4 class="font-semibold mb-2" style="color: #3D3228;">Licensed Professionals</h4>
+        <p style="color: #7A6B5D;">Certified specialists with extensive training and expertise</p>
+       </div>
+      </div>
+      <div class="flex gap-4"><i data-lucide="check-circle" style="width:24px; height:24px; color: #B48C64; flex-shrink: 0; margin-top: 2px;"></i>
+       <div>
+        <h4 class="font-semibold mb-2" style="color: #3D3228;">Premium Products</h4>
+        <p style="color: #7A6B5D;">Only the finest, clinically-tested beauty products</p>
+       </div>
+      </div>
+      <div class="flex gap-4"><i data-lucide="check-circle" style="width:24px; height:24px; color: #B48C64; flex-shrink: 0; margin-top: 2px;"></i>
+       <div>
+        <h4 class="font-semibold mb-2" style="color: #3D3228;">Personalized Care</h4>
+        <p style="color: #7A6B5D;">Customized treatment plans for your unique skin needs</p>
+       </div>
+      </div>
+      <div class="flex gap-4"><i data-lucide="check-circle" style="width:24px; height:24px; color: #B48C64; flex-shrink: 0; margin-top: 2px;"></i>
+       <div>
+        <h4 class="font-semibold mb-2" style="color: #3D3228;">Relaxing Environment</h4>
+        <p style="color: #7A6B5D;">Serene ambiance designed for ultimate pampering and wellness</p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="max-w-4xl mx-auto px-6 text-center mb-20">
+    <h3 class="text-3xl font-bold mb-6" style="color: #3D3228;">Explore Our Complete Treatment Menu</h3>
+    <p style="color: #7A6B5D;" class="text-lg">Visit our Services page to discover all our aesthetic treatments</p>
+   </div>
+  </section><!-- Services Section -->
+  <section id="services-section" class="pt-24 pb-20">
+   <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-4xl font-bold mb-4 text-center" style="color: #3D3228;">Our Complete Treatment Menu</h2>
+    <p style="color: #7A6B5D;" class="text-center mb-12 text-lg">Professional aesthetic treatments tailored to your skin</p><!-- Tabs -->
+    <div class="flex flex-wrap gap-3 mb-12 justify-center"><button class="service-tab px-6 py-2 rounded-lg font-medium transition-all" data-category="all" style="background: #B48C64; color: #FAF7F4;">All Services</button> <button class="service-tab px-6 py-2 rounded-lg font-medium transition-all" data-category="facial" style="background: #D4C5B9; color: #3D3228;">Facials</button> <button class="service-tab px-6 py-2 rounded-lg font-medium transition-all" data-category="treatment" style="background: #D4C5B9; color: #3D3228;">Treatments</button> <button class="service-tab px-6 py-2 rounded-lg font-medium transition-all" data-category="package" style="background: #D4C5B9; color: #3D3228;">Packages</button>
+    </div><!-- Services Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16" id="services-grid"><!-- Facials -->
+     <div class="service-card bg-white p-8 rounded-xl card-hover shadow-sm" data-category="facial">
+      <div class="flex items-start justify-between mb-4">
+       <div class="flex-1">
+        <div class="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style="background: rgba(180, 140, 100, 0.1);">
+         <i data-lucide="droplets" style="width:24px; height:24px; color: #B48C64;"></i>
+        </div>
+        <h4 class="text-lg font-semibold" style="color: #3D3228;">Signature Facial</h4>
+       </div><span style="color: #B48C64;" class="font-bold text-lg whitespace-nowrap">₱2,500</span>
+      </div>
+      <p style="color: #7A6B5D;" class="text-xs mb-3 font-medium">60 minutes</p>
+      <p style="color: #7A6B5D;" class="text-sm leading-relaxed mb-4">Deep cleanse, exfoliate, moisture infusion, and therapeutic facial massage. Perfect for maintaining healthy, glowing skin.</p>
+      <ul style="color: #7A6B5D;" class="text-xs space-y-2">
+       <li class="flex gap-2"><i data-lucide="check" style="width:16px; height:16px; color: #B48C64; flex-shrink: 0; margin-top: 2px;"></i> Professional cleansing</li>
+       <li class="flex gap-2"><i data-lucide="check" style="width:16px; height:16px; color: #B48C64; flex-shrink: 0; margin-top: 2px;"></i> Gentle exfoliation</li>
+       <li class="flex gap-2"><i data-lucide="check" style="width:16px; height:16px; color: #B48C64; flex-shrink: 0; margin-top: 2px;"></i> Hydrating mask</li>
+       <li class="flex gap-2"><i data-lucide="check" style="width:16px; height:16px; color: #B48C64; flex-shrink: 0; margin-top: 2px;"></i> Facial massage</li>
+      </ul>
+     </div>
+     <div class="service-card bg-white p-8 rounded-xl card-hover shadow-sm" data-category="facial">
+      <div class="flex items-start justify-between mb-4">
+       <div class="flex-1">
+        <div class="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style="background: rgba(180, 140, 100, 0.1);">
+         <i data-lucide="sparkles" style="width:24px; height:24px; color: #B48C64;"></i>
+        </div>
+        <h4 class="text-lg font-semibold" style="color: #3D3228;">Brightening Facial</h4>
+       </div><span style="color: #B48C64;" class="font-bold text-lg whitespace-nowrap">₱3,200</span>
+      </div>
+      <p style="color: #7A6B5D;" class="text-xs mb-3 font-medium">45 minutes</p>
+      <p style="color: #7A6B5D;" class="text-sm leading-relaxed mb-4">Specialized treatment to reduce dark spots, hyperpigmentation, and uneven skin tone. Reveals your natural radiance.</p>
+      <ul style="color: #7A6B5D;" class="text-xs space-y-2">
+       <li class="flex gap-2"><i data-lucide="check" style="width:16px; height:16px; color: #B48C64; flex-shrink: 0; margin-top: 2px;"></i> Brightening serum</li>
+       <li class="flex gap-2"><i data-lucide="check" style="width:16px; height:16px; color: #B48C64; flex-shrink: 0; margin-top: 2px;"></i> Vitamin C treatment</li>
+       <li class="flex gap-2"><i data-lucide="check" style="width:16px; height:16px; color: #B48C64; flex-shrink: 0; margin-top: 2px;"></i> Lightening mask</li>
+       <li class="flex gap-2"><i data-lucide="check" style="width:16px; height:16px; color: #B48C64; flex-shrink: 0; margin-top: 2px;"></i> SPF protection</li>
+      </ul>
+     </div>
+     <div class="service-card bg-white p-8 rounded-xl card-hover shadow-sm" data-category="facial">
+      <div class="flex items-start justify-between mb-4">
+       <div class="flex-1">
+        <div class="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style="background: rgba(180, 140, 100, 0.1);">
+         <i data-lucide="flower" style="width:24px; height:24px; color: #B48C64;"></i>
+        </div>
+        <h4 class="text-lg font-semibold" style="color: #3D3228;">Botanical Facial</h4>
+       </div><span style="color: #B48C64;" class="font-bold text-lg whitespace-nowrap">₱3,500</span>
+      </div>
+      <p style="color: #7A6B5D;" class="text-xs mb-3 font-medium">60 minutes</p>
+      <p style="color: #7A6B5D;" class="text-sm leading-relaxed mb-4">Organic botanical extracts and natural ingredients for sensitive, reactive skin. Calming and nourishing treatment.</p>
+      <ul style="color: #7A6B5D;" class="text-xs space-y-2">
+       <li class="flex gap-2"><i data-lucide="check" style="width:16px; height:16px; color: #B48C64; flex-shrink: 0; margin-top: 2px;"></i> Natural botanical blend</li>
+       <li class="flex gap-2"><i data-lucide="check" style="width:16px; height:16px; color: #B48C64; flex-shrink: 0; margin-top: 2px;"></i> Anti-inflammatory</li>
+       <li class="flex gap-2"><i data-lucide="check" style="width:16px; height:16px; color: #B48C64; flex-shrink: 0; margin-top: 2px;"></i> Soothing mask</li>
+       <li class="flex gap-2"><i data-lucide="check" style="width:16px; height:16px; color: #B48C64; flex-shrink: 0; margin-top: 2px;"></i> Calming massage</li>
+      </ul>
+     </div><!-- Treatments -->
+     <div class="service-card bg-white p-8 rounded-xl card-hover shadow-sm" data-category="treatment">
+      <div class="flex items-start justify-between mb-4">
+       <div class="flex-1">
+        <div class="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style="background: rgba(180, 140, 100, 0.1);">
+         <i data-lucide="zap" style="width:24px; height:24px; color: #B48C64;"></i>
+        </div>
+        <h4 class="text-lg font-semibold" style="color: #3D3228;">Hydration Therapy</h4>
+       </div><span style="color: #B48C64;" class="font-bold text-lg whitespace-nowrap">₱3,000</span>
+      </div>
+      <p style="color: #7A6B5D;" class="text-xs mb-3 font-medium">45 minutes</p>
+      <p style="color: #7A6B5D;" class="text-sm leading-relaxed mb-4">Intensive moisture infusion treatment for dehydrated, dull skin. Replenishes skin cells and restores elasticity.</p>
+      <ul style="color: #7A6B5D;" class="text-xs space-y-2">
+       <li class="flex gap-2"><i data-lucide="check" style="width:16px; height:16px; color: #B48C64; flex-shrink: 0; margin-top: 2px;"></i> Hydrating serums</li>
+       <li class="flex gap-2"><i data-lucide="check" style="width:16px; height:16px; color: #B48C64; flex-shrink: 0; margin-top: 2px;"></i> Moisture mask</li>
+       <li class="flex gap-2"><i data-lucide="check" style="width:16px; height:16px; color: #B48C64; flex-shrink: 0; margin-top: 2px;"></i> Skin hydration boost</li>
+       <li class="flex gap-2"><i data-lucide="check" style="width:16px; height:16px; color: #B48C64; flex-shrink: 0; margin-top: 2px;"></i> Radiance treatment</li>
+      </ul>
+     </div>
+     <div class="service-card bg-white p-8 rounded-xl card-hover shadow-sm" data-category="treatment">
+      <div class="flex items-start justify-between mb-4">
+       <div class="flex-1">
+        <div class="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style="background: rgba(180, 140, 100, 0.1);">
+         <i data-lucide="smile" style="width:24px; height:24px; color: #B48C64;"></i>
+        </div>
+        <h4 class="text-lg font-semibold" style="color: #3D3228;">Anti-Aging Treatment</h4>
+       </div><span style="color: #B48C64;" class="font-bold text-lg whitespace-nowrap">₱4,000</span>
+      </div>
+      <p style="color: #7A6B5D;" class="text-xs mb-3 font-medium">75 minutes</p>
+      <p style="color: #7A6B5D;" class="text-sm leading-relaxed mb-4">Advanced rejuvenation treatment with peptides and collagen. Minimizes fine lines and restores youthful glow.</p>
+      <ul style="color: #7A6B5D;" class="text-xs space-y-2">
+       <li class="flex gap-2"><i data-lucide="check" style="width:16px; height:16px; color: #B48C64; flex-shrink: 0; margin-top: 2px;"></i> Peptide serum</li>
+       <li class="flex gap-2"><i data-lucide="check" style="width:16px; height:16px; color: #B48C64; flex-shrink: 0; margin-top: 2px;"></i> Collagen mask</li>
+       <li class="flex gap-2"><i data-lucide="check" style="width:16px; height:16px; color: #B48C64; flex-shrink: 0; margin-top: 2px;"></i> Firming treatment</li>
+       <li class="flex gap-2"><i data-lucide="check" style="width:16px; height:16px; color: #B48C64; flex-shrink: 0; margin-top: 2px;"></i> Rejuvenation massage</li>
+      </ul>
+     </div>
+     <div class="service-card bg-white p-8 rounded-xl card-hover shadow-sm" data-category="treatment">
+      <div class="flex items-start justify-between mb-4">
+       <div class="flex-1">
+        <div class="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style="background: rgba(180, 140, 100, 0.1);">
+         <i data-lucide="sun" style="width:24px; height:24px; color: #B48C64;"></i>
+        </div>
+        <h4 class="text-lg font-semibold" style="color: #3D3228;">Chemical Peel</h4>
+       </div><span style="color: #B48C64;" class="font-bold text-lg whitespace-nowrap">₱3,500</span>
+      </div>
+      <p style="color: #7A6B5D;" class="text-xs mb-3 font-medium">50 minutes</p>
+      <p style="color: #7A6B5D;" class="text-sm leading-relaxed mb-4">Safe, professional-grade peeling solution. Brightens, renews, and removes dead skin cells for smoother, clearer skin.</p>
+      <ul style="color: #7A6B5D;" class="text-xs space-y-2">
+       <li class="flex gap-2"><i data-lucide="check" style="width:16px; height:16px; color: #B48C64; flex-shrink: 0; margin-top: 2px;"></i> Safe peeling agent</li>
+       <li class="flex gap-2"><i data-lucide="check" style="width:16px; height:16px; color: #B48C64; flex-shrink: 0; margin-top: 2px;"></i> Skin renewal</li>
+       <li class="flex gap-2"><i data-lucide="check" style="width:16px; height:16px; color: #B48C64; flex-shrink: 0; margin-top: 2px;"></i> Acne-prone care</li>
+       <li class="flex gap-2"><i data-lucide="check" style="width:16px; height:16px; color: #B48C64; flex-shrink: 0; margin-top: 2px;"></i> Healing mask</li>
+      </ul>
+     </div>
+     <div class="service-card bg-white p-8 rounded-xl card-hover shadow-sm" data-category="treatment">
+      <div class="flex items-start justify-between mb-4">
+       <div class="flex-1">
+        <div class="w-12 h-12 rounded-lg flex items-center justify-center mb-4" style="background: rgba(180, 140, 100, 0.1);">
+         <i data-lucide="shield-check" style="width:24px; height:24px; color: #B48C64;"></i>
+        </div>
+        <h4 class="text-lg font-semibold" style="color: #3D3228;">Acne Control</h4>
+       </div><span style="color: #B48C64;" class="font-bold text-lg whitespace-nowrap">₱3,200</span>
+      </div>
+      <p style="color: #7A6B5D;" class="text-xs mb-3 font-medium">50 minutes</p>
+      <p style="color: #7A6B5D;" class="text-sm leading-relaxed mb-4">Specialized treatment targeting acne-prone skin with antibacterial and clarifying formulations. Reduces breakouts.</p>
+      <ul style="color: #7A6B5D;" class="text-xs space-y-2">
+       <li class="flex gap-2"><i data-lucide="check" style="width:16px; height:16px; color: #B48C64; flex-shrink: 0; margin-top: 2px;"></i> Deep pore cleansing</li>
+       <li class="flex gap-2"><i data-lucide="check" style="width:16px; height:16px; color: #B48C64; flex-shrink: 0; margin-top: 2px;"></i> Antibacterial serum</li>
+       <li class="flex gap-2"><i data-lucide="check" style="width:16px; height:16px; color: #B48C64; flex-shrink: 0; margin-top: 2px;"></i> Clarifying mask</li>
+       <li class="flex gap-2"><i data-lucide="check" style="width:16px; height:16px; color: #B48C64; flex-shrink: 0; margin-top: 2px;"></i> Spot treatment</li>
+      </ul>
+     </div><!-- Packages -->
+     <div class="service-card bg-white p-8 rounded-xl card-hover shadow-md border-2" style="border-color: #B48C64;" data-category="package">
+      <div class="flex items-start justify-between mb-4">
+       <div class="flex-1">
+        <h4 class="text-lg font-semibold" style="color: #3D3228;">Glow Bundle</h4>
+       </div><span style="color: #B48C64;" class="font-bold text-lg whitespace-nowrap">₱7,200</span>
+      </div>
+      <p style="color: #7A6B5D;" class="text-xs mb-3 font-medium">3 sessions • 1 month</p>
+      <p style="color: #7A6B5D;" class="text-sm leading-relaxed mb-4">Perfect starter package combining signature facials and hydration therapy for complete skin transformation.</p>
+      <ul style="color: #7A6B5D;" class="text-xs space-y-2">
+       <li class="flex gap-2"><i data-lucide="check" style="width:16px; height:16px; color: #B48C64; flex-shrink: 0; margin-top: 2px;"></i> 2x Signature Facials</li>
+       <li class="flex gap-2"><i data-lucide="check" style="width:16px; height:16px; color: #B48C64; flex-shrink: 0; margin-top: 2px;"></i> 1x Hydration Therapy</li>
+       <li class="flex gap-2"><i data-lucide="check" style="width:16px; height:16px; color: #B48C64; flex-shrink: 0; margin-top: 2px;"></i> Save 10%</li>
+      </ul>
+     </div>
+     <div class="service-card bg-white p-8 rounded-xl card-hover shadow-sm border-2" style="border-color: #D4C5B9;" data-category="package">
+      <div class="flex items-start justify-between mb-4">
+       <div class="flex-1">
+        <h4 class="text-lg font-semibold" style="color: #3D3228;">Radiance Plus</h4>
+       </div><span style="color: #B48C64;" class="font-bold text-lg whitespace-nowrap">₱14,400</span>
+      </div>
+      <p style="color: #7A6B5D;" class="text-xs mb-3 font-medium">6 sessions • 2 months</p>
+      <p style="color: #7A6B5D;" class="text-sm leading-relaxed mb-4">Comprehensive skincare package with variety of treatments for maximum results and visible skin improvement.</p>
+      <ul style="color: #7A6B5D;" class="text-xs space-y-2">
+       <li class="flex gap-2"><i data-lucide="check" style="width:16px; height:16px; color: #B48C64; flex-shrink: 0; margin-top: 2px;"></i> 2x Signature Facials</li>
+       <li class="flex gap-2"><i data-lucide="check" style="width:16px; height:16px; color: #B48C64; flex-shrink: 0; margin-top: 2px;"></i> 2x Hydration Therapy</li>
+       <li class="flex gap-2"><i data-lucide="check" style="width:16px; height:16px; color: #B48C64; flex-shrink: 0; margin-top: 2px;"></i> 1x Chemical Peel</li>
+       <li class="flex gap-2"><i data-lucide="check" style="width:16px; height:16px; color: #B48C64; flex-shrink: 0; margin-top: 2px;"></i> 1x Anti-Aging</li>
+       <li class="flex gap-2"><i data-lucide="check" style="width:16px; height:16px; color: #B48C64; flex-shrink: 0; margin-top: 2px;"></i> Save 15%</li>
+      </ul>
+     </div>
+     <div class="service-card bg-white p-8 rounded-xl card-hover shadow-sm" data-category="package">
+      <div class="flex items-start justify-between mb-4">
+       <div class="flex-1">
+        <h4 class="text-lg font-semibold" style="color: #3D3228;">Total Renewal</h4>
+       </div><span style="color: #B48C64;" class="font-bold text-lg whitespace-nowrap">₱22,500</span>
+      </div>
+      <p style="color: #7A6B5D;" class="text-xs mb-3 font-medium">12 sessions • 3 months</p>
+      <p style="color: #7A6B5D;" class="text-sm leading-relaxed mb-4">Premium package with complete facial journey including all treatments. Dramatic skin transformation guaranteed.</p>
+      <ul style="color: #7A6B5D;" class="text-xs space-y-2">
+       <li class="flex gap-2"><i data-lucide="check" style="width:16px; height:16px; color: #B48C64; flex-shrink: 0; margin-top: 2px;"></i> 4x Signature Facials</li>
+       <li class="flex gap-2"><i data-lucide="check" style="width:16px; height:16px; color: #B48C64; flex-shrink: 0; margin-top: 2px;"></i> 3x Hydration Therapy</li>
+       <li class="flex gap-2"><i data-lucide="check" style="width:16px; height:16px; color: #B48C64; flex-shrink: 0; margin-top: 2px;"></i> 2x Anti-Aging</li>
+       <li class="flex gap-2"><i data-lucide="check" style="width:16px; height:16px; color: #B48C64; flex-shrink: 0; margin-top: 2px;"></i> 2x Chemical Peel</li>
+       <li class="flex gap-2"><i data-lucide="check" style="width:16px; height:16px; color: #B48C64; flex-shrink: 0; margin-top: 2px;"></i> 1x Brightening</li>
+       <li class="flex gap-2"><i data-lucide="check" style="width:16px; height:16px; color: #B48C64; flex-shrink: 0; margin-top: 2px;"></i> Save 20%</li>
+      </ul>
+     </div>
+    </div><!-- Enhancements -->
+    <div style="background: #F0E8DF;" class="rounded-xl p-12 mb-16">
+     <h3 class="text-2xl font-bold mb-8 text-center" style="color: #3D3228;">Enhance Your Experience</h3>
+     <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+      <div class="bg-white p-6 rounded-lg text-center card-hover">
+       <div class="w-12 h-12 rounded-lg flex items-center justify-center mb-3 mx-auto" style="background: rgba(180, 140, 100, 0.1);">
+        <i data-lucide="eye" style="width:20px; height:20px; color: #B48C64;"></i>
+       </div>
+       <p style="color: #3D3228;" class="font-semibold mb-1">Eye Contour</p>
+       <p style="color: #B48C64;" class="font-bold">+₱800</p>
+       <p style="color: #7A6B5D;" class="text-xs mt-2">Delicate eye care</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg text-center card-hover">
+       <div class="w-12 h-12 rounded-lg flex items-center justify-center mb-3 mx-auto" style="background: rgba(180, 140, 100, 0.1);">
+        <i data-lucide="heart" style="width:20px; height:20px; color: #B48C64;"></i>
+       </div>
+       <p style="color: #3D3228;" class="font-semibold mb-1">Lip Treatment</p>
+       <p style="color: #B48C64;" class="font-bold">+₱600</p>
+       <p style="color: #7A6B5D;" class="text-xs mt-2">Hydrating plump</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg text-center card-hover">
+       <div class="w-12 h-12 rounded-lg flex items-center justify-center mb-3 mx-auto" style="background: rgba(180, 140, 100, 0.1);">
+        <i data-lucide="coffee" style="width:20px; height:20px; color: #B48C64;"></i>
+       </div>
+       <p style="color: #3D3228;" class="font-semibold mb-1">Neck &amp; Décolleté</p>
+       <p style="color: #B48C64;" class="font-bold">+₱1,000</p>
+       <p style="color: #7A6B5D;" class="text-xs mt-2">Premium areas</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg text-center card-hover">
+       <div class="w-12 h-12 rounded-lg flex items-center justify-center mb-3 mx-auto" style="background: rgba(180, 140, 100, 0.1);">
+        <i data-lucide="hand" style="width:20px; height:20px; color: #B48C64;"></i>
+       </div>
+       <p style="color: #3D3228;" class="font-semibold mb-1">Hand Treatment</p>
+       <p style="color: #B48C64;" class="font-bold">+₱500</p>
+       <p style="color: #7A6B5D;" class="text-xs mt-2">Rejuvenating care</p>
+      </div>
+     </div>
+    </div><!-- FAQ -->
+    <div class="mt-12 max-w-3xl mx-auto">
+     <h3 class="text-2xl font-bold mb-8 text-center" style="color: #3D3228;">Frequently Asked Questions</h3>
+     <div class="space-y-4">
+      <details class="bg-white p-6 rounded-lg cursor-pointer group" open><summary class="font-semibold flex justify-between items-center" style="color: #3D3228;">How often should I get facials? <i data-lucide="chevron-down" style="width:20px; height:20px; color: #B48C64;" class="group-open:rotate-180 transition-transform"></i></summary>
+       <p style="color: #7A6B5D;" class="text-sm mt-3">We recommend monthly facials for maintenance. Packages are designed for consistent, scheduled treatments that maximize skincare benefits.</p>
+      </details>
+      <details class="bg-white p-6 rounded-lg cursor-pointer group"><summary class="font-semibold flex justify-between items-center" style="color: #3D3228;">Are treatments suitable for sensitive skin? <i data-lucide="chevron-down" style="width:20px; height:20px; color: #B48C64;" class="group-open:rotate-180 transition-transform"></i></summary>
+       <p style="color: #7A6B5D;" class="text-sm mt-3">Absolutely! Our specialists customize treatments for all skin types. We use hypoallergenic products and adjust based on your needs.</p>
+      </details>
+      <details class="bg-white p-6 rounded-lg cursor-pointer group"><summary class="font-semibold flex justify-between items-center" style="color: #3D3228;">What should I do before and after? <i data-lucide="chevron-down" style="width:20px; height:20px; color: #B48C64;" class="group-open:rotate-180 transition-transform"></i></summary>
+       <p style="color: #7A6B5D;" class="text-sm mt-3">Before: Arrive with clean skin. After: Avoid makeup for 24 hours, use SPF daily, and follow our detailed aftercare instructions.</p>
+      </details>
+      <details class="bg-white p-6 rounded-lg cursor-pointer group"><summary class="font-semibold flex justify-between items-center" style="color: #3D3228;">Can I combine different treatments? <i data-lucide="chevron-down" style="width:20px; height:20px; color: #B48C64;" class="group-open:rotate-180 transition-transform"></i></summary>
+       <p style="color: #7A6B5D;" class="text-sm mt-3">Yes! Many treatments complement each other beautifully. Our specialists recommend personalized combinations for your specific goals.</p>
+      </details>
+      <details class="bg-white p-6 rounded-lg cursor-pointer group"><summary class="font-semibold flex justify-between items-center" style="color: #3D3228;">How long until I see results? <i data-lucide="chevron-down" style="width:20px; height:20px; color: #B48C64;" class="group-open:rotate-180 transition-transform"></i></summary>
+       <p style="color: #7A6B5D;" class="text-sm mt-3">Many clients notice improvements after the first treatment. Significant results typically appear after 3-6 sessions for optimal outcomes.</p>
+      </details>
+     </div>
+    </div>
+   </div>
+  </section><!-- Contact Section -->
+  <section id="contact-section" class="hidden pt-24 pb-20">
+   <div class="max-w-4xl mx-auto px-6">
+    <h2 class="text-4xl font-bold mb-4 text-center" style="color: #3D3228;">Get in Touch</h2>
+    <p style="color: #7A6B5D;" class="text-center mb-12 text-lg">We'd love to hear from you. Reach out anytime!</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16"><!-- Contact Info -->
+     <div>
+      <div class="mb-8">
+       <div class="flex items-start gap-4 mb-6">
+        <div class="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0" style="background: rgba(180, 140, 100, 0.1);">
+         <i data-lucide="map-pin" style="width:24px; height:24px; color: #B48C64;"></i>
+        </div>
+        <div>
+         <h4 class="font-semibold mb-1" style="color: #3D3228;">Visit Us</h4>
+         <p style="color: #7A6B5D;">123 Beauty Street<br>
+           Spa District, CC 12345</p>
+        </div>
+       </div>
+       <div class="flex items-start gap-4 mb-6">
+        <div class="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0" style="background: rgba(180, 140, 100, 0.1);">
+         <i data-lucide="phone" style="width:24px; height:24px; color: #B48C64;"></i>
+        </div>
+        <div>
+         <h4 class="font-semibold mb-1" style="color: #3D3228;">Call Us</h4>
+         <p style="color: #7A6B5D;"><a href="tel:+1234567890" style="color: #B48C64; text-decoration: none;">+1 (234) 567-8900</a></p>
+        </div>
+       </div>
+       <div class="flex items-start gap-4">
+        <div class="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0" style="background: rgba(180, 140, 100, 0.1);">
+         <i data-lucide="mail" style="width:24px; height:24px; color: #B48C64;"></i>
+        </div>
+        <div>
+         <h4 class="font-semibold mb-1" style="color: #3D3228;">Email Us</h4>
+         <p style="color: #7A6B5D;"><a href="mailto:hello@rheacay.com" style="color: #B48C64; text-decoration: none;">hello@beautyca.com</a></p>
+        </div>
+       </div>
+      </div>
+      <div style="background: #F0E8DF;" class="p-8 rounded-xl mt-8">
+       <h4 class="font-semibold mb-4" style="color: #3D3228;">Hours</h4>
+       <div style="color: #7A6B5D;" class="text-sm space-y-2">
+        <p><span class="font-medium">Mon - Fri:</span> 10:00 AM - 6:00 PM</p>
+        <p><span class="font-medium">Saturday:</span> 10:00 AM - 4:00 PM</p>
+        <p><span class="font-medium">Sunday:</span> Closed</p>
+       </div>
+      </div>
+     </div><!-- Contact Form -->
+     <div class="bg-white p-8 rounded-xl shadow-sm">
+      <form id="contact-form">
+       <div class="mb-5"><label for="contact-name" class="block text-sm font-medium mb-2" style="color: #3D3228;">Your Name</label> <input type="text" id="contact-name" name="name" placeholder="John Doe" class="w-full px-4 py-2 border rounded-lg" style="border-color: #D4C5B9; color: #3D3228;" required>
+       </div>
+       <div class="mb-5"><label for="contact-email" class="block text-sm font-medium mb-2" style="color: #3D3228;">Email Address</label> <input type="email" id="contact-email" name="email" placeholder="you@example.com" class="w-full px-4 py-2 border rounded-lg" style="border-color: #D4C5B9; color: #3D3228;" required>
+       </div>
+       <div class="mb-5"><label for="contact-phone" class="block text-sm font-medium mb-2" style="color: #3D3228;">Phone (Optional)</label> <input type="tel" id="contact-phone" name="phone" placeholder="+1 (234) 567-8900" class="w-full px-4 py-2 border rounded-lg" style="border-color: #D4C5B9; color: #3D3228;">
+       </div>
+       <div class="mb-6"><label for="contact-message" class="block text-sm font-medium mb-2" style="color: #3D3228;">Message</label> <textarea id="contact-message" name="message" placeholder="Tell us about your inquiry..." rows="4" class="w-full px-4 py-2 border rounded-lg" style="border-color: #D4C5B9; color: #3D3228; font-family: inherit;" required></textarea>
+       </div><button type="submit" class="w-full py-3 rounded-lg font-medium btn-primary">Send Message</button>
+      </form>
+      <div id="contact-status" class="mt-4 text-center text-sm" style="display: none;"></div>
+     </div>
+    </div>
+   </div>
+  </section><!-- Inventory Section -->
+  <section id="inventory-section" class="hidden pt-24 pb-20">
+   <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-4xl font-bold mb-12 text-center" style="color: #3D3228;">Staff Portal</h2>
+    
+    <div class="text-center mb-8">
+     <p style="color: #7A6B5D;" class="mb-6">Staff login for inventory access</p><a href="/ exp3.html"><button>go to login</button></a>
+    </div>
+    
+   </div>
+  </section><!-- Footer -->
+  <footer style="background: #3D3228; color: #FAF7F4;" class="py-12">
+   <div class="max-w-6xl mx-auto px-6 text-center">
+    <p class="mb-2">Bhea Cay Aesthetic Clinic</p>
+    <p style="color: #B48C64;" class="text-sm">✨ Transform Your Beauty, Transform Your Confidence ✨</p>
+   </div>
+  </footer>
+  <script>
+    const defaultConfig = { clinic_name: 'Bhea Cay Aesthetic', app_title: 'Inventory' };
+    let config = { ...defaultConfig };
+    let inventoryData = [];
+
+    const dataHandler = {
+      onDataChanged(data) {
+        inventoryData = data;
+      }
+    };
+
+    async function initializeDataSDK() {
+      const result = await window.dataSdk.init(dataHandler);
+      if (!result.isOk) console.error('Data SDK init failed');
+    }
+
+    // Navigation
+    document.getElementById('nav-home').addEventListener('click', () => {
+      document.getElementById('home-section').classList.remove('hidden');
+      document.getElementById('services-section').classList.add('hidden');
+      document.getElementById('inventory-section').classList.add('hidden');
+      document.getElementById('nav-home').style.color = '#B48C64';
+      document.getElementById('nav-services').style.color = '#7A6B5D';
+      document.getElementById('nav-inventory').style.color = '#7A6B5D';
+    });
+
+    document.getElementById('nav-services').addEventListener('click', () => {
+      document.getElementById('home-section').classList.add('hidden');
+      document.getElementById('services-section').classList.remove('hidden');
+      document.getElementById('inventory-section').classList.add('hidden');
+      document.getElementById('nav-home').style.color = '#7A6B5D';
+      document.getElementById('nav-services').style.color = '#B48C64';
+      document.getElementById('nav-inventory').style.color = '#7A6B5D';
+    });
+
+    document.getElementById('nav-inventory').addEventListener('click', () => {
+      document.getElementById('home-section').classList.add('hidden');
+      document.getElementById('services-section').classList.add('hidden');
+      document.getElementById('contact-section').classList.add('hidden');
+      document.getElementById('inventory-section').classList.remove('hidden');
+      document.getElementById('nav-home').style.color = '#7A6B5D';
+      document.getElementById('nav-services').style.color = '#7A6B5D';
+      document.getElementById('nav-inventory').style.color = '#B48C64';
+      document.getElementById('nav-contact').style.color = '#7A6B5D';
+    });
+
+    document.getElementById('nav-contact').addEventListener('click', () => {
+      document.getElementById('home-section').classList.add('hidden');
+      document.getElementById('services-section').classList.add('hidden');
+      document.getElementById('inventory-section').classList.add('hidden');
+      document.getElementById('contact-section').classList.remove('hidden');
+      document.getElementById('nav-home').style.color = '#7A6B5D';
+      document.getElementById('nav-services').style.color = '#7A6B5D';
+      document.getElementById('nav-inventory').style.color = '#7A6B5D';
+      document.getElementById('nav-contact').style.color = '#B48C64';
+    });
+
+    // Service Tabs
+    const serviceTabs = document.querySelectorAll('.service-tab');
+    const serviceCards = document.querySelectorAll('.service-card');
+
+    serviceTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const category = tab.getAttribute('data-category');
+        serviceTabs.forEach(t => {
+          t.style.background = '#D4C5B9';
+          t.style.color = '#3D3228';
+        });
+        tab.style.background = '#B48C64';
+        tab.style.color = '#FAF7F4';
+        serviceCards.forEach(card => {
+          if (category === 'all' || card.getAttribute('data-category') === category) {
+            card.style.display = '';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Contact Form
+    document.getElementById('contact-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const form = e.target;
+      const name = document.getElementById('contact-name').value;
+      const email = document.getElementById('contact-email').value;
+      const phone = document.getElementById('contact-phone').value;
+      const message = document.getElementById('contact-message').value;
+
+      const statusDiv = document.getElementById('contact-status');
+      statusDiv.style.display = 'block';
+      statusDiv.style.color = '#10A950';
+      statusDiv.innerHTML = '✓ Thank you! Your message has been sent successfully.';
+
+      form.reset();
+      setTimeout(() => {
+        statusDiv.style.display = 'none';
+      }, 5000);
+    });
+
+    // Element SDK
+    window.elementSdk.init({
+      defaultConfig,
+      onConfigChange: async (cfg) => { Object.assign(config, cfg); },
+      mapToCapabilities: () => ({ recolorables: [], borderables: [], fontEditable: undefined, fontSizeable: undefined }),
+      mapToEditPanelValues: (cfg) => new Map([
+        ['clinic_name', cfg.clinic_name || defaultConfig.clinic_name],
+        ['app_title', cfg.app_title || defaultConfig.app_title]
+      ])
+    });
+
+    lucide.createIcons();
+    initializeDataSDK();
+  </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9e75a4c23652fee5',t:'MTc3NTM2MTYwMy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
